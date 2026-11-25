@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documents & Publications | Abhinandan Chatterjee</title>
+
+<style>
+:root {
+    --green: #174b35;
+    --dark-green: #103b2a;
+    --saffron: #f28c28;
+    --light: #f5f6f4;
+    --text: #242824;
+    --muted: #707770;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--light);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+    background: white;
+    border-bottom: 1px solid #e5e8e5;
+    padding: 18px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-mark {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--green);
+    line-height: 1.3;
+}
+
+.brand-subtitle {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: var(--muted);
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--green);
+}
+
+/* PAGE HERO */
+
+.hero {
+    background: var(--green);
+    color: white;
+    padding: 75px 7%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: 35px solid rgba(255,255,255,0.06);
+    border-radius: 50%;
+    right: 8%;
+    top: -100px;
+}
+
+.hero-label {
+    color: #f5bd75;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.15;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 600px;
+    color: #e1e9e3;
+    font-size: 15px;
+}
+
+/* MAIN CONTENT */
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 65px 7%;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 26px;
+    color: var(--green);
+    margin-bottom: 7px;
+}
+
+.section-heading p {
+    color: var(--muted);
+    font-size: 14px;
+}
+
+/* DOCUMENT GRID */
+
+.document-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.document-card {
+    background: white;
+    border: 1px solid #e6e9e6;
+    border-radius: 5px;
+    padding: 27px;
+    transition: 0.25s ease;
+}
+
+.document-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.07);
+    border-color: #b6c8bc;
+}
+
+.document-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.pdf-icon {
+    width: 48px;
+    height: 48px;
+    background: #fff0ed;
+    color: #c33b32;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.category {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--green);
+    background: #edf4ef;
+    padding: 6px 10px;
+    font-weight: bold;
+}
+
+.document-card h3 {
+    font-size: 19px;
+    margin-bottom: 8px;
+    color: #242824;
+}
+
+.document-card p {
+    font-size: 13px;
+    color: var(--muted);
+    min-height: 45px;
+    margin-bottom: 18px;
+}
+
+.document-meta {
+    font-size: 11px;
+    color: #929892;
+    margin-bottom: 18px;
+}
+
+.view-link {
+    display: inline-block;
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 800;
+    text-decoration: none;
+    letter-spacing: 1px;
+    border-bottom: 2px solid var(--saffron);
+    padding-bottom: 4px;
+    transition: 0.2s;
+}
+
+.view-link:hover {
+    color: var(--saffron);
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--dark-green);
+    color: white;
+    padding: 35px 7%;
+    text-align: center;
+}
+
+footer p {
+    font-size: 12px;
+    color: #d0ddd4;
+}
+
+footer .footer-name {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        width: 100%;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 55px 6%;
+    }
+
+    .container {
+        padding: 45px 6%;
+    }
+
+    .document-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+
+    <div class="brand">
+        <div class="brand-mark">
+            <!-- Optional: add your logo image here -->
+            <!-- <img src="logo.png" alt="Logo"> -->
+        </div>
+
+        <div>
+            <div class="brand-name">ABHINANDAN CHATTERJEE</div>
+            <div class="brand-subtitle">PERSONAL WEBSITE</div>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#initiatives">Initiatives</a>
+        <a href="documents.html" class="active">Documents</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+
+    <div class="hero-label">Library & Resources</div>
+
+    <h1>Documents &<br>Publications</h1>
+
+    <p>
+        Access policy papers, official statements, research,
+        reports and other publications.
+    </p>
+
+</section>
+
+
+<!-- DOCUMENTS -->
+<main class="container">
+
+    <div class="section-heading">
+        <h2>Featured Documents</h2>
+        <p>Selected publications and documents available to read online.</p>
+    </div>
+
+    <div class="document-grid">
+
+        <!-- DOCUMENT 1 -->
+        <article class="document-card">
+
+            <div class="document-top">
+                <div class="pdf-icon">PDF</div>
+                <span class="category">Policy</span>
+            </div>
+
+            <h3>Policy Paper</h3>
+
+            <p>
+                A detailed paper outlining policy ideas,
+                proposals and recommendations.
+            </p>
+
+            <div class="document-meta">
+                PDF DOCUMENT
+            </div>
+
+            <a href="documents/policy-paper.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="view-link">
+                VIEW DOCUMENT ↗
+            </a>
+
+        </article>
+
+
+        <!-- DOCUMENT 2 -->
+        <article class="document-card">
+
+            <div class="document-top">
+                <div class="pdf-icon">PDF</div>
+                <span class="category">Statements</span>
+            </div>
+
+            <h3>Public Statements</h3>
+
+            <p>
+                Official public statements, announcements
+                and written communications.
+            </p>
+
+            <div class="document-meta">
+                PDF DOCUMENT
+            </div>
+
+            <a href="documents/public-statements.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="view-link">
+                VIEW DOCUMENT ↗
+            </a>
+
+        </article>
+
+
+        <!-- DOCUMENT 3 -->
+        <article class="document-card">
+
+            <div class="document-top">
+                <div class="pdf-icon">PDF</div>
+                <span class="category">Research</span>
+            </div>
+
+            <h3>Research & Reports</h3>
+
+            <p>
+                Research papers, reports and analytical
+                publications.
+            </p>
+
+            <div class="document-meta">
+                PDF DOCUMENT
+            </div>
+
+            <a href="documents/research-report.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="view-link">
+                VIEW DOCUMENT ↗
+            </a>
+
+        </article>
+
+
+        <!-- DOCUMENT 4 -->
+        <article class="document-card">
+
+            <div class="document-top">
+                <div class="pdf-icon">PDF</div>
+                <span class="category">Publications</span>
+            </div>
+
+            <h3>Other Publications</h3>
+
+            <p>
+                Additional articles, publications and
+                documents of public interest.
+            </p>
+
+            <div class="document-meta">
+                PDF DOCUMENT
+            </div>
+
+            <a href="documents/other-publications.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="view-link">
+                VIEW DOCUMENT ↗
+            </a>
+
+        </article>
+
+    </div>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-name">ABHINANDAN CHATTERJEE</div>
+
+    <p>Personal Website | Documents & Publications</p>
+
+    <p style="margin-top: 10px;">
+        © 2026 Abhinandan Chatterjee. All rights reserved.
+    </p>
+
+</footer>
+
+</body>
+</html>
