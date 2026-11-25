@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#173b2c">
+<meta name="description" content="The official personal website of Abhinandan Chatterjee. Biography, initiatives, views, updates and media.">
+<title>Abhinandan Chatterjee | Official Website</title>
+<style>
+:root{--green:#173b2c;--green2:#24533d;--saffron:#e58a32;--gold:#c8a45e;--cream:#f7f4ec;--paper:#fff;--ink:#202a32;--muted:#68737b;--line:#e5e1d8;--serif:Georgia,"Times New Roman",serif;--sans:Arial,Helvetica,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fff;color:var(--ink);font:15px/1.65 var(--sans)}a{color:inherit;text-decoration:none}.topbar{height:5px;background:linear-gradient(90deg,var(--saffron) 0 33.33%,#fff 33.33% 66.66%,#26814c 66.66%)}
+.header{background:#fff;border-bottom:1px solid #e9e6df;position:sticky;top:0;z-index:30;box-shadow:0 2px 12px #0000000b}.head-inner{max-width:1240px;margin:auto;min-height:88px;padding:10px 25px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;align-items:center;gap:13px;min-width:260px}.seal{height:55px;width:55px;border:none ;border-radius:0%;display:grid;place-items:center;color:var(--green);font: bold 13px var(--sans);letter-spacing:-.04em;position:relative}.seal:after{display: none;}.brand-name{font:22px/1.12 var(--serif);color:var(--green);letter-spacing:.01em}.brand-sub{font-size:9px;letter-spacing:.17em;text-transform:uppercase;color:#7a7e79;margin-top:5px}
+.nav{display:flex;align-items:center;gap:22px}.nav>a,.nav-group>button{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:#34433b;background:none;border:0;padding:12px 0;cursor:pointer;font-family:var(--sans)}.nav>a:hover,.nav-group>button:hover{color:var(--saffron)}.nav-group{position:relative}.dropdown{display:none;position:absolute;top:100%;left:-16px;min-width:205px;background:#fff;box-shadow:0 10px 28px #0002;border-top:3px solid var(--saffron);padding:8px 0}.dropdown a{display:block;padding:9px 16px;font-size:12px;color:#3e4b43}.dropdown a:hover{background:var(--cream);color:var(--green)}.nav-group:hover .dropdown,.nav-group:focus-within .dropdown{display:block}.menu{display:none;background:var(--green);color:white;border:0;padding:10px 13px}
+.hero{background:var(--green);color:#fff;position:relative;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#102f24 0%,#173b2c 52%,#173b2caa 100%);z-index:1}.hero-inner{max-width:1240px;margin:auto;min-height:510px;padding:58px 25px;display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center;position:relative;z-index:2}
+.hero-copy .eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#f2c77d;font-weight:bold}.hero h1{font:clamp(43px,6vw,70px)/1.05 var(--serif);font-weight:400;margin:16px 0 17px}.hero h1 span{color:#f1c77d}.hero-copy p{font-size:17px;color:#e4eae5;max-width:580px;margin:0}.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:12px 19px;border:1px solid #e4bd75;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:bold}.btn.primary{background:var(--saffron);border-color:var(--saffron);color:#fff}.btn.light{color:#fff;border-color:#ffffff88}.hero-photo{height:390px;max-width:490px;width:100%;justify-self:end;background:linear-gradient(145deg,#e7e0d0,#b8ad96);border:8px solid #ffffff17;box-shadow:0 15px 45px #0004;display:grid;place-items:center;color:#344537;text-align:center;padding:18px}.photo-placeholder{height:100%;width:100%;border:1px solid #445a4c66;display:flex;flex-direction:column;justify-content:center;align-items:center}.photo-placeholder b{font:44px var(--serif)}.photo-placeholder span{font-size:10px;letter-spacing:.14em;text-transform:uppercase;margin-top:8px}
+.hero-dots{position:absolute;z-index:3;bottom:20px;left:calc(50% - 8px);display:flex;gap:8px}.hero-dots i{width:7px;height:7px;border-radius:50%;background:#ffffff66}.hero-dots i:first-child{background:var(--saffron)}
+.quickbar{background:#f5f3ed;border-bottom:1px solid var(--line)}.quick-inner{max-width:1240px;margin:auto;padding:13px 25px;display:flex;gap:28px;flex-wrap:wrap}.quick-inner span{font-size:11px;color:#606b64}.quick-inner b{color:var(--green);margin-right:5px}
+main{max-width:1240px;margin:auto;padding:0 25px}.section{padding:67px 0;border-bottom:1px solid var(--line)}.section-top{display:flex;align-items:center;gap:14px;margin-bottom:30px}.section-top .rule{height:2px;width:34px;background:var(--saffron)}h2{font:39px/1.15 var(--serif);font-weight:400;color:var(--green);margin:0}.section-sub{color:var(--muted);max-width:780px;margin:-14px 0 30px}
+.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.feature{padding:24px 23px;background:var(--cream);border-top:3px solid var(--gold)}.feature .number{font:28px var(--serif);color:var(--saffron)}.feature h3{font:23px var(--serif);font-weight:400;color:var(--green);margin:8px 0}.feature p{font-size:13px;color:#657068;margin:0}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}.about-text p{color:#53605a;margin:0 0 15px}.quote-panel{background:var(--green);padding:30px;color:#fff;border-left:5px solid var(--saffron)}.quote-panel h3{font:25px var(--serif);font-weight:400;color:#f2cd8b;margin:0 0 12px}.quote-panel p{font-size:14px;color:#e0e7e1;margin:0}
+.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.work-card{border:1px solid var(--line);background:#fff;padding:25px;display:flex;gap:18px;align-items:flex-start}.work-icon{width:42px;height:42px;flex:none;border-radius:50%;background:#f7eee0;color:#a86a25;display:grid;place-items:center;font:20px var(--serif)}.work-card small{font-size:10px;text-transform:uppercase;letter-spacing:.14em;color:#9a7135}.work-card h3{font:24px var(--serif);font-weight:400;color:var(--green);margin:4px 0 6px}.work-card p{font-size:13px;color:var(--muted);margin:0}
+.timeline{border-left:2px solid #d9c69e;margin:10px 0 0 10px;padding-left:28px}.timeline-item{position:relative;padding:0 0 26px}.timeline-item:before{content:"";position:absolute;left:-35px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--saffron);border:3px solid #fff;box-shadow:0 0 0 1px #c8a45e}.timeline-item .date{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:#a27532;font-weight:bold}.timeline-item h3{font:21px var(--serif);font-weight:400;color:var(--green);margin:3px 0}.timeline-item p{font-size:13px;color:var(--muted);margin:0}
+.press-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.press-card{border:1px solid var(--line);background:#fff}.press-image{height:145px;background:linear-gradient(135deg,#e7e1d4,#d3c6aa);display:grid;place-items:center;color:#586858;font-size:11px;letter-spacing:.12em;text-transform:uppercase}.press-body{padding:17px}.press-body small{font-size:10px;color:#a27532;text-transform:uppercase;letter-spacing:.12em}.press-body h3{font:20px var(--serif);font-weight:400;color:var(--green);margin:6px 0}.press-body p{font-size:12px;color:var(--muted);margin:0}
+.views-list{border-top:1px solid var(--line)}.view-row{display:grid;grid-template-columns:145px 1fr 20px;gap:20px;padding:18px 0;border-bottom:1px solid var(--line);align-items:center}.view-row small{font-size:10px;text-transform:uppercase;letter-spacing:.13em;color:#9a7135}.view-row h3{font:21px var(--serif);font-weight:400;color:var(--green);margin:0}.view-row p{font-size:12px;color:var(--muted);margin:2px 0 0}.view-row .arrow{color:var(--saffron);font-size:22px}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.gallery-tile{aspect-ratio:4/3;background:linear-gradient(145deg,#e8e2d5,#cfc3a9);display:grid;place-items:center;color:#59675c;font-size:10px;text-transform:uppercase;letter-spacing:.1em;border:1px solid #e0d9cb}
+.contact{background:var(--green);color:#fff;padding:36px;display:flex;align-items:center;justify-content:space-between;gap:25px}.contact h2{color:#fff;margin-bottom:9px}.contact p{color:#e1e8e2;font-size:14px;margin:0;max-width:650px}.contact .btn{white-space:nowrap;color:#fff}
+footer{background:#102d22;color:#d3ddd5;padding:26px 25px}.footer-inner{max-width:1240px;margin:auto;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:11px}.footer-inner strong{color:#f2cc86;font-weight:400}.disclaimer{font-size:10px;color:#aab8ae;margin-top:8px}
+@media(max-width:900px){.nav{gap:13px}.nav>a,.nav-group>button{font-size:10px}.hero-inner{grid-template-columns:1fr .8fr;gap:22px}.hero-photo{height:330px}.feature-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:740px){.head-inner{min-height:74px}.menu{display:block}.nav{display:none;position:absolute;top:74px;left:0;right:0;background:#fff;padding:15px 25px 22px;flex-direction:column;align-items:stretch;gap:0;border-top:1px solid var(--line);box-shadow:0 12px 20px #0001}.nav.open{display:flex}.nav>a,.nav-group>button{display:block;text-align:left;padding:12px 0;width:100%;font-size:11px}.dropdown{position:static;box-shadow:none;border-top:0;border-left:2px solid var(--gold);margin:0 0 8px 10px}.nav-group:hover .dropdown{display:none}.nav-group.expanded .dropdown{display:block}.hero-inner{grid-template-columns:1fr;padding-top:45px;padding-bottom:55px}.hero-photo{justify-self:start;width:min(100%,350px);height:300px}.about-grid{grid-template-columns:1fr}.feature-grid,.press-grid{grid-template-columns:1fr 1fr}.gallery-grid{grid-template-columns:1fr 1fr}.section{padding:52px 0}}
+@media(max-width:540px){.brand{min-width:0}.brand-name{font-size:17px}.brand-sub{font-size:8px}.seal{width:46px;height:46px}.hero h1{font-size:45px}.hero-copy p{font-size:15px}h2{font-size:32px}.feature-grid,.work-grid,.press-grid{grid-template-columns:1fr}.view-row{grid-template-columns:1fr 18px;gap:5px}.view-row small{grid-column:1/-1}.contact{display:block;padding:27px}.contact .btn{margin-top:18px}.quick-inner{gap:8px 18px}}
+.seal img{width:52px;height:52px;object-fit:contain;display:block}
+</style>
+</head>
+<body>
+<div class="topbar"></div>
+<header class="header">
+ <div class="head-inner">
+  <a class="brand" href="#home"><span class="seal img" aria-label="BJP"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Logo_of_the_Bharatiya_Janata_Party.svg" alt="Bharatiya Janata Party lotus logo"></span><span><div class="brand-name">ABHINANDAN CHATTERJEE</div><div class="brand-sub">Official Personal Website</div></span></a>
+  <button class="menu" aria-expanded="false" aria-label="Toggle menu">MENU ☰</button>
+  <nav class="nav" aria-label="Main navigation">
+   <a href="#home">Home</a><a href="#about">About</a>
+   <div class="nav-group"><button type="button">Public Work ▾</button><div class="dropdown"><a href="#initiatives">Initiatives</a><a href="#journey">Journey</a><a href="#impact">Areas of Work</a></div></div>
+   <div class="nav-group"><button type="button">Media ▾</button><div class="dropdown"><a href="#press">Press &amp; Updates</a><a href="#views">My Views</a><a href="#gallery">Gallery</a></div></div>
+   <a href="#contact">Contact</a>
+  </nav>
+ </div>
+</header>
+<section class="hero" id="home">
+ <div class="hero-inner">
+  <div class="hero-copy">
+   <div class="eyebrow">Official personal website</div>
+   <h1>Abhinandan<br><span>Chatterjee</span></h1>
+   <p>Student, public organiser and founder of the Jayatu Sanskritam Movement. Interested in Indian civilisation, public affairs, governance and nation-building.</p>
+   <div class="hero-buttons"><a class="btn primary" href="#about">Know More</a><a class="btn light" href="#initiatives">My Initiatives</a></div>
+  </div>
+  <div class="hero-photo"><div class="photo-placeholder"><b>Portrait</b><span>Replace with your official photograph</span></div></div>
+ </div>
+ <div class="hero-dots"><i></i><i></i><i></i></div>
+</section>
+<div class="quickbar"><div class="quick-inner"><span><b>Based in:</b> Kolkata, West Bengal</span><span><b>Role:</b> Founder &amp; President, JSM</span><span><b>Focus:</b> Culture · Nation · Development</span></div></div>
+<main>
+<section class="section" id="impact">
+ <div class="section-top"><span class="rule"></span><h2>Areas of Focus</h2></div>
+ <p class="section-sub">The themes that guide my interests, study and organisational work.</p>
+ <div class="feature-grid">
+  <article class="feature"><div class="number">01</div><h3>Indian Culture &amp; Heritage</h3><p>Engagement with Indian civilisation, Sanskrit, history, philosophy and cultural traditions.</p></article>
+  <article class="feature"><div class="number">02</div><h3>Public Life &amp; Organisation</h3><p>Learning about public institutions, political organisation, leadership and disciplined institution-building.</p></article>
+  <article class="feature"><div class="number">03</div><h3>Development &amp; Governance</h3><p>Interest in policy, public administration, national development and effective governance.</p></article>
+ </div>
+</section>
+<section class="section" id="about">
+ <div class="section-top"><span class="rule"></span><h2>About Me</h2></div>
+ <div class="about-grid">
+  <div class="about-text">
+   <p>I am Abhinandan Chatterjee, a student based in Kolkata, West Bengal. My interests include Indian history and civilisation, political thought, cultural traditions, governance and public affairs.</p>
+   <p>I believe that ideas become meaningful when they are translated into sustained work, capable institutions and constructive public engagement. This website serves as a central place to learn about my background, initiatives, views and activities.</p>
+   <p>My work is at an early stage. I intend to document its development honestly, adding verified milestones, publications and activities as they take place.</p>
+  </div>
+  <aside class="quote-panel"><h3>Culture · Nation · Development</h3><p>A concise expression of the three themes associated with the Jayatu Sanskritam Movement.</p></aside>
+ </div>
+</section>
+<section class="section" id="initiatives">
+ <div class="section-top"><span class="rule"></span><h2>Initiatives &amp; Public Work</h2></div>
+ <p class="section-sub">An introduction to the initiatives and subjects with which I am currently engaged.</p>
+ <div class="work-grid">
+  <article class="work-card"><div class="work-icon">ॐ</div><div><small>Founder &amp; President</small><h3>Jayatu Sanskritam Movement</h3><p>A cultural and public initiative focused on culture, nation and development, with an emphasis on Indian heritage and public life.</p></div></article>
+  <article class="work-card"><div class="work-icon">§</div><div><small>Study &amp; research</small><h3>Policy &amp; Governance</h3><p>Independent learning about public policy, institutions, administration and models of national development.</p></div></article>
+  <article class="work-card"><div class="work-icon">॥</div><div><small>Research interest</small><h3>History &amp; Civilisation</h3><p>Reading and exploring historical sources, Indian intellectual traditions and cultural history.</p></div></article>
+  <article class="work-card"><div class="work-icon">✦</div><div><small>Creative work</small><h3>Writing &amp; Alternate History</h3><p>Personal writing and speculative historical projects exploring political and historical possibilities.</p></div></article>
+ </div>
+</section>
+<section class="section" id="journey">
+ <div class="section-top"><span class="rule"></span><h2>My Journey</h2></div>
+ <p class="section-sub">A timeline of personal, educational and organisational milestones. Add dates and details as they are ready to be shared publicly.</p>
+ <div class="timeline">
+  <div class="timeline-item"><div class="date">Current</div><h3>Building the Jayatu Sanskritam Movement</h3><p>Working on the movement's public identity, organisational foundations and outreach.</p></div>
+  <div class="timeline-item"><div class="date">Ongoing</div><h3>Study, reading and policy learning</h3><p>Developing knowledge of Indian history, political thought, governance and public policy.</p></div>
+  <div class="timeline-item"><div class="date">To be updated</div><h3>Further milestones</h3><p>Verified educational, organisational and public milestones will be added here.</p></div>
+ </div>
+</section>
+<section class="section" id="press">
+ <div class="section-top"><span class="rule"></span><h2>Press &amp; Updates</h2></div>
+ <p class="section-sub">Announcements, media coverage and official updates will be published here. No sample news items are presented as real coverage.</p>
+ <div class="press-grid">
+  <article class="press-card"><div class="press-image">News &amp; announcements</div><div class="press-body"><small>Updates</small><h3>Latest announcements</h3><p>Space for verified public announcements and organisational updates.</p></div></article>
+  <article class="press-card"><div class="press-image">Press releases</div><div class="press-body"><small>Statements</small><h3>Press releases</h3><p>Official statements and releases, with publication dates and source links.</p></div></article>
+  <article class="press-card"><div class="press-image">Media coverage</div><div class="press-body"><small>In the media</small><h3>News coverage</h3><p>Links to genuine interviews, articles and media appearances, when available.</p></div></article>
+ </div>
+</section>
+<section class="section" id="views">
+ <div class="section-top"><span class="rule"></span><h2>My Views</h2></div>
+ <p class="section-sub">A place for personal essays, articles, short reflections and notes on issues of interest.</p>
+ <div class="views-list">
+  <article class="view-row"><small>Articles</small><div><h3>Political thought &amp; public institutions</h3><p>Articles and reflections will appear here when published.</p></div><span class="arrow">›</span></article>
+  <article class="view-row"><small>Culture</small><div><h3>Indian history &amp; cultural heritage</h3><p>Notes on history, civilisation, traditions and intellectual life.</p></div><span class="arrow">›</span></article>
+  <article class="view-row"><small>Policy</small><div><h3>Governance &amp; development</h3><p>Learning notes and commentary on public policy and administration.</p></div><span class="arrow">›</span></article>
+ </div>
+</section>
+<section class="section" id="gallery">
+ <div class="section-top"><span class="rule"></span><h2>Photo Gallery</h2></div>
+ <p class="section-sub">Photographs from genuine events, meetings, public activities and personal milestones can be added here.</p>
+ <div class="gallery-grid"><div class="gallery-tile">Event photograph</div><div class="gallery-tile">Public activity</div><div class="gallery-tile">Meeting</div><div class="gallery-tile">Portrait</div></div>
+</section>
+<section class="section" id="contact" style="border:0">
+ <div class="contact"><div><h2>Get in Touch</h2><p>For correspondence, questions about my initiatives or professional enquiries, please use the public contact details listed here.</p></div><a class="btn" href="mailto:replace-with-your-email@example.com" onclick="if(this.href.includes('replace-with-your-email')){alert('Please replace the sample email address in the HTML first.');return false;}">Contact Me</a></div>
+ <p style="font-size:11px;color:#7b8580;margin:13px 0 0">Before publishing, add your public email address and social media links.</p>
+</section>
+</main>
+<footer><div class="footer-inner"><div>© <span id="year"></span> <strong>Abhinandan Chatterjee</strong></div><div>Official personal website</div></div><div class="footer-inner disclaimer">Personal website. Not a government or parliamentary website. Organisational roles and affiliations are stated for identification only.</div></footer>
+<script>
+const menu=document.querySelector('.menu'),nav=document.querySelector('.nav');
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
+document.querySelectorAll('.nav>a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false');}));
+document.querySelectorAll('.nav-group>button').forEach(b=>b.addEventListener('click',()=>{if(window.matchMedia('(max-width:740px)').matches)b.parentElement.classList.toggle('expanded');}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
